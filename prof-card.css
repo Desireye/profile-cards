@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-color: hsl(185, 75%, 39%);
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    background-repeat: no-repeat, no-repeat;
+    padding: 1.5rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.card-image{
+    border-top-right-radius: 0.8rem;
+    border-top-left-radius: 0.8rem;
+    z-index: 0;
+    width: 21rem;
+}
+.profile-image{
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: -15%;
+    margin-left: 35%;
+    z-index: 1;
+}
+.content{
+    background: white;
+    height: 14rem;
+    width: 21rem;
+    margin-top: -1%;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    box-shadow: 0px 2px 200px -40px rgba(0, 0, 0, 0.818);
+}
+.profile{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 7%;
+}
+.profile b{
+    font-size: 1.1rem;
+    color: hsl(229, 23%, 23%);
+    margin-top: -4%;
+}
+.profile b span{
+    font-weight: 400;
+    font-size: 1rem;
+    margin-left: 2%;
+}
+.profile span{
+    margin-top: 2%;
+    font-size: 0.8rem;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+hr{
+    border: 0.001rem solid hsl(0, 5%, 92%);
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    padding: 6%;
+}
+.numbers{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    font-size: 1.2rem;
+}
+.info{
+    margin-top: 2%;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    text-align: center;
+}
+#followers{
+    margin-left: -30%;
+}
+#likes{
+    margin-left: -5%;
+}
+footer{
+    position: absolute;
+    bottom: 1%;
+    color: hsl(229, 23%, 23%);
+    font-size: 0.9rem;
+}
+a{
+    color: hsl(229, 23%, 23%);
+    text-decoration: overline;
+}
+a:hover{
+    color: white;
+}
